@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_fab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apkbus.materialdesigndemo.floatingactionbutton.FloatingActionButtonActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_fab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:src="@android:drawable/ic_input_add"
+        app:borderWidth="0dp"
+        app:elevation="4dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/ll_fab"
+        app:layout_anchorGravity="bottom|right"
+        app:rippleColor="@color/colorPrimaryDark" />
+</android.support.design.widget.CoordinatorLayout>
